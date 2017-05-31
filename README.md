@@ -3,6 +3,7 @@
 * Ruby      2.4.1
 * Rails     5.1.1
 * webpacker 2.0
+* vue       2.3.3
 * node      7.10.0
 * yarn      0.24.5
 
@@ -13,9 +14,13 @@ rails new rails-vue-sandbox --webpack=vue
 # or run on a Rails app already setup with webpacker
 ./bin/rails webpacker:install:vue
 
+# update vue.js
+yarn upgrade vue
+
 ./bin/rails webpacker
 # or
 ./bin/webpack --watch --progress --colors
+
 
 # Procfile
 web: bundle exec rails s

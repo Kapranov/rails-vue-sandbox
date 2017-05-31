@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <p>Hi {{ message }}</p>
+    <input type="text" v-model="message" placeholder="edit me">
   </div>
 </template>
 

@@ -1,5 +1,3 @@
-// Common configuration for webpacker loaded from config/webpacker.yml
-
 const { join, resolve } = require('path')
 const { env } = require('process')
 const { safeLoad } = require('js-yaml')

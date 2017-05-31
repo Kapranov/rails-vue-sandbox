@@ -6,16 +6,24 @@
 * node      7.10.0
 * yarn      0.24.5
 
-> Use Webpack to manage app-like JavaScript modules in Rails
+> Use [Webpack][1] to manage app-like JavaScript modules in Rails
 
 ```bash
-./bin/rails webpacker
 rails new rails-vue-sandbox --webpack=vue
 # or run on a Rails app already setup with webpacker
 ./bin/rails webpacker:install:vue
 
+./bin/rails webpacker
+# or
+./bin/webpack --watch --progress --colors
+
+# Procfile
+web: bundle exec rails s
+webpacker: ./bin/webpack-dev-server --host 127.0.0.1 --inline true --hot false
 
 foreman start
 ```
 
 ### 31 May Oleg G.Kapranov
+
+[1]: https://github.com/rails/webpacker

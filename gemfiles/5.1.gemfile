@@ -14,12 +14,12 @@ gem 'webpacker'
 gem 'turbolinks',               '~> 5.0'
 gem 'jbuilder',                 '~> 2.6'
 gem 'redis'
-gem 'foreman'
 
 group :development, :test do
   gem 'byebug',                 platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara',               '~> 2.14'
   gem 'selenium-webdriver'
+  gem 'foreman'
 end
 
 group :development do

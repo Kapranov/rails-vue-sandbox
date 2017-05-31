@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './app.vue'
+import BootstrapVue from 'bootstrap-vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('hello'))

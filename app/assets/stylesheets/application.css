@@ -1,4 +1,6 @@
 /*
+ *= require bootstrap/dist/css/bootstrap
+ *= require bootstrap-vue/dist/bootstrap-vue
  *= require_tree .
  *= require_self
  */

@@ -10,15 +10,20 @@ gem 'sqlite3'
 gem 'puma',                     '~> 3.8'
 gem 'sass-rails',               '~> 5.0'
 gem 'uglifier',                 '~> 3.2'
-gem 'webpacker'
 gem 'turbolinks',               '~> 5.0'
 gem 'jbuilder',                 '~> 2.6'
 gem 'redis'
+gem 'webpacker'
+gem 'font-awesome-rails'
+gem 'vue-rails-form-builder'
 
 group :development, :test do
   gem 'byebug',                 platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara',               '~> 2.14'
   gem 'selenium-webdriver'
+  gem 'rubocop'
+  gem 'brakeman'
+  gem 'rspec'
   gem 'foreman'
 end
 

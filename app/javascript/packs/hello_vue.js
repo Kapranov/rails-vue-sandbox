@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import App from './app.vue'
+import TurbolinksAdapter from 'vue-turbolinks'
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.appendChild(document.createElement('hello'))
-  const app = new Vue({
-    el: 'hello',
-    template: '<App/>',
-    components: { App }
-  })
-
-  console.log(app)
+document.addEventListener('turbolinks:load', () => {
+  var element = document.getElementById("hello")
+  if (element != null) {
+    var app = new Vue({
+      el: element,
+      template: '<App/>',
+      components: { App },
+      mixins: [TurbolinksAdapter]
+    })
+  }
 })

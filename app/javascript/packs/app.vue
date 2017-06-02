@@ -1,15 +1,8 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col col-lg-2"> </div>
-        <div class="col-12 col-md-auto">
-          <p>Hi {{ message }}</p>
-          <input type="text" v-model="message" placeholder="edit me">
-        </div>
-        <div class="col col-lg-2"> </div>
-      </div>
-    </div>
+    <hr>
+    <p>Hi {{ message }}</p>
+    <input type="text" v-model="message" placeholder="edit me">
     <hr>
   </div>
 </template>

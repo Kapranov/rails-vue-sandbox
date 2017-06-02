@@ -7,7 +7,7 @@ end
 
 gem 'rails',                    '~> 5.1'
 gem 'sqlite3'
-gem 'puma',                     '~> 3.8'
+gem 'puma',                     '~> 3.9'
 gem 'sass-rails',               '~> 5.0'
 gem 'uglifier',                 '~> 3.2'
 gem 'turbolinks',               '~> 5.0'
@@ -24,13 +24,20 @@ group :development, :test do
   gem 'rubocop'
   gem 'brakeman'
   gem 'rspec'
+  gem 'rspec-rails',            '~> 3.6'
   gem 'foreman'
+  gem 'faker'
 end
 
 group :development do
+  gem 'awesome_print'
   gem 'capistrano-rails'
   gem 'web-console',            '~> 3.5'
   gem 'listen',                 '~> 3.1'
   gem 'spring'
   gem 'spring-watcher-listen',  '~> 2.0'
+end
+
+group :test do
+  gem 'shoulda-matchers',       '~> 3.1'
 end

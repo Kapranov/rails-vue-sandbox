@@ -5,7 +5,7 @@
 * webpacker 2.0
 * vue       2.3.3
 * node      7.10.0
-* npm       5.0.0
+* npm       5.0.1
 * yarn      0.24.5
 
 > Use [Webpack][1] to manage app-like JavaScript modules in Rails

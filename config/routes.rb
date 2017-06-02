@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  root to: "tops#index"
+
   get 'demo/index'
-  root to: "home#index"
+  get 'home/index'
+
   mount ActionCable.server => '/cable'
 end

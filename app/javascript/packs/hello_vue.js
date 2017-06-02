@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import App from './app.vue'
 
 // register the grid component
 Vue.component('demo-grid', {

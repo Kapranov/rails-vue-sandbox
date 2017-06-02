@@ -1,1 +1,4 @@
-console.log('Hello World from Webpacker')
+import Lugatex from 'lugatex'
+
+console.log(Lugatex)
+console.log('Hello World from Webpacker!')

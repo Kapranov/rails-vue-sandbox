@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <p><b>{{ message }}</b></p>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data: function () {
     return {
-      message: "Hello Vue! "
+      message: "Vue.js - The Progressive JavaScript Framework"
     }
   }
 }

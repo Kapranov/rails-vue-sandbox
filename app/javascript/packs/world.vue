@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="world">
     <hr>
     <p>Hi {{ message }}</p>
     <input type="text" v-model="message" placeholder="edit me">

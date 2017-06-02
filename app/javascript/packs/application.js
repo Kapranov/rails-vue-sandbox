@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import Lugatex from 'lugatex'
 
 console.log(Lugatex)

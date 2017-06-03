@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'demo/index'
   get 'home/index'
+  get 'employees/index'
 
   mount ActionCable.server => '/cable'
 end

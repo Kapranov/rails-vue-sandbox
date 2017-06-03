@@ -1,20 +1,20 @@
 <template>
-  <div id="app">
-    <hr>
-    <p>Hi {{ message }}</p>
-    <input type="text" v-model="message" placeholder="edit me">
-    <hr>
-  </div>
+  <p>{{ greeting(name) }}</p>
 </template>
 
 <script>
 export default {
   data: function () {
     return {
-      message: "Hello Vue! "
+      greeting: function (name) {
+        return 'Hello, ' + name + '!';
+      }
     }
-  }
+  },
+  props: ['name']
 }
+
+
 </script>
 
 <style scoped>

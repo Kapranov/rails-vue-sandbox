@@ -38,6 +38,14 @@ bundle:
 	$(V)rm -f Gemfile.lock
 	$(V)bundle
 
+npm_clean:
+	$(V)rm -f -r node_modules
+	$(v)rm -f package-lock.json
+	$(V)rm -f yarn.lock
+	$(V)npm install
+	$(V)yarn install
+	$(V)yarn upgrade
+
 clean: bundle
 	$(V)clear
 	$(V)rm -f -r ./public/packs/*

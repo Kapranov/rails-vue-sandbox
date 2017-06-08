@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <hr>
-    <p>Hi {{ message }}</p>
-    <input type="text" v-model="message" placeholder="edit me">
-    <hr>
+    <p><b>{{ message }}</b></p>
   </div>
 </template>
 
 <script>
-export default {
+module.exports = {
   data: function () {
     return {
-      message: "Hello Vue! "
+      message: "Vue.js - The Progressive JavaScript Framework!"
     }
   }
 }

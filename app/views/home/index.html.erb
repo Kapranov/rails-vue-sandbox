@@ -1,40 +1,25 @@
-<%= javascript_pack_tag 'demos_vue' %>
+<div id='sortlist'></div>
 
-<!-- component template -->
-<script type="text/x-template" id="grid-template">
-  <table>
-    <thead>
-      <tr>
-        <th v-for="key in columns"
-          @click="sortBy(key)"
-          :class="{ active: sortKey == key }">
-          {{ key | capitalize }}
-          <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-          </span>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="entry in filteredData">
-        <td v-for="key in columns">
-          {{entry[key]}}
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</script>
-
-<!-- demo root element -->
 <h1>Home page</h1>
-<%= link_to "Top", root_path %>
+<%= link_to 'go back', root_path, class: "btn btn-info" %>
 <hr>
-<div id="demo">
-  <form id="search">
-    Search <input name="query" v-model="searchQuery">
-  </form>
-  <demo-grid
-    :data="gridData"
-    :columns="gridColumns"
-    :filter-key="searchQuery">
-  </demo-grid>
+<div id="app"></div>
+<hr>
+<div id='widget'>
+  <hello name="lugatex@yahoo.com"></hello>
 </div>
+<hr>
+<!-- http://js.jirengu.com/duzo/1/edit?html,console,output -->
+<div id="watching">
+  <input v-model="xxx">
+  <hr>
+  <input :value="xxx"
+         @input="xxx =$event.target.value">
+</div>
+
+<hr>
+<div id="world"></div>
+
+<%= javascript_pack_tag 'hello_vue' %>
+<%= javascript_pack_tag 'watch_vue' %>
+<%= javascript_pack_tag 'world_vue' %>

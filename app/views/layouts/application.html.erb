@@ -8,10 +8,12 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag 'hello_vue' %>
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_pack_tag 'demo_vue' %>
+    <%= javascript_pack_tag 'sortlist_vue' %>
+    <%= javascript_pack_tag 'widget_vue' %>
   </body>
 </html>

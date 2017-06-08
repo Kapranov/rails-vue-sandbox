@@ -1,6 +1,9 @@
 <template>
-  <div id="app">
-    <p><b>{{ message }}</b></p>
+  <div id="world">
+    <hr>
+    <p>Hi {{ message }}</p>
+    <input type="text" v-model="message" placeholder="edit me">
+    <hr>
   </div>
 </template>
 
@@ -8,7 +11,7 @@
 export default {
   data: function () {
     return {
-      message: "Vue.js - The Progressive JavaScript Framework"
+      message: "Hello Vue! "
     }
   }
 }

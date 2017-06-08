@@ -3,9 +3,9 @@
 * Ruby      2.4.1
 * Rails     5.1.1
 * webpacker 2.0
-* vue       2.3.3
+* vue       2.3.4
 * node      7.10.0
-* npm       5.0.1
+* npm       5.0.3
 * yarn      0.24.5
 
 > Use [Webpack][1] to manage app-like JavaScript modules in Rails
@@ -30,6 +30,6 @@ webpacker: ./bin/webpack-dev-server --host 127.0.0.1 --inline true --hot false
 foreman start
 ```
 
-### 31 May Oleg G.Kapranov
+### 8 June Oleg G.Kapranov
 
 [1]: https://github.com/rails/webpacker

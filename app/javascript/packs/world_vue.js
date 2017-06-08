@@ -1,13 +1,12 @@
 import Vue from 'vue'
-import App from './world.vue'
+import World from './components/world.vue'
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.appendChild(document.createElement('hello'))
-  const app = new Vue({
-    el: 'hello',
-    template: '<App/>',
-    components: { App }
-  })
+Vue.config.productionTip = false;
 
-  console.log(app)
+const world = new Vue({
+  el: '#world',
+  template: '<World/>',
+  components: { World }
 })
+
+console.log(world)

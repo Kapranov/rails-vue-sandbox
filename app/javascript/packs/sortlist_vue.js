@@ -1,8 +1,9 @@
 import Vue from 'vue'
 
-// register the grid component
-Vue.component('demo-grid', {
-  template: '#grid-template',
+Vue.config.productionTip = false;
+
+Vue.component('sortlist-grid', {
+  template: '#sortlist-template',
   replace: true,
   props: {
     data: Array,
@@ -55,9 +56,8 @@ Vue.component('demo-grid', {
   }
 })
 
-// bootstrap the demo
-var demo = new Vue({
-  el: '#demo',
+var sortlist = new Vue({
+  el: '#sortlist',
   data: {
     searchQuery: '',
     gridColumns: ['name', 'power'],

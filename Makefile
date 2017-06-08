@@ -40,6 +40,7 @@ bundle:
 
 clean: bundle
 	$(V)clear
+	$(V)rm -f -r ./public/packs/*
 	$(V)rake tmp:clear log:clear
 	$(V)./bin/webpack
 

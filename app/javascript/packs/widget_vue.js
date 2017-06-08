@@ -1,12 +1,11 @@
 import Vue from 'vue'
 import Hello from './components/Widget.vue'
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.appendChild(document.createElement('hello'))
-  const app = new Vue({
-    el: 'hello',
-    components: { Hello }
-  })
+Vue.config.productionTip = false;
 
-  console.log(app)
+const widget = new Vue({
+  el: '#widget',
+  components: { Hello }
 })
+
+console.log(widget)

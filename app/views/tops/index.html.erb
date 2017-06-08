@@ -1,6 +1,8 @@
-<%= javascript_pack_tag 'under_vue' %>
+<div id='app'></div>
+<div id='sortlist'></div>
+<div id='widget'></div>
 
-<div class="page-header">
+<div class="page-header-tops">
   <h1><i class="fa fa-smile-o"></i> Ruby on Rails via Vue.js </h1>
   <div style="text-align: right">
     <%= image_tag "rails-logo.png", width: 260 %>
@@ -11,12 +13,10 @@
   <hr>
   <ul style="margin: 0; list-style-type: none;">
     <li>
-      <%= link_to "Home", home_index_path %>
-      |
-      <%= link_to "Demo", demo_index_path %>
-      |
-      <%= link_to "Empl", employees_index_path %>
-      |
+      <%= link_to "Home", home_index_path, class: "btn btn-info" %>
+      <%= link_to "Demo", demo_index_path, class: "btn btn-info" %>
+      <%= link_to "Employees", employees_index_path, class: "btn btn-info" %>
+      <%= link_to "SortLists", sortlists_index_path, class: "btn btn-info" %>
     </li>
   </ul>
   <hr>

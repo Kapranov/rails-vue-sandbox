@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'demo/index'
   get 'home/index'
   get 'employees/index'
+  get 'sortlists/index'
 
   mount ActionCable.server => '/cable'
 end

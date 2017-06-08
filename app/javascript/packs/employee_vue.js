@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './employee.vue'
+import Employee from './components/employee.vue'
 
 var employees = new Vue({
   el: '#employees',
@@ -14,6 +14,6 @@ var employees = new Vue({
       success: function(res) {
         that.employees = res;
       }
-    });
+    })
   }
-});
+})

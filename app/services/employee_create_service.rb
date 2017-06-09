@@ -1,6 +1,6 @@
 class EmployeeCreateService
   def call
-    Employee.create(name: "Brandon", email: "brandon.keao@gmail.com", manager: true)
+    Employee.create(name: "Kapranov", email: "lugatex@yahoo.com", manager: true)
   end
 end
 

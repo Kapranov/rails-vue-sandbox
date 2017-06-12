@@ -33,3 +33,6 @@ foreman start
 ### 8 June Oleg G.Kapranov
 
 [1]: https://github.com/rails/webpacker
+[2]: https://bootstrap-vue.github.io/docs
+[3]: https://github.com/bootstrap-vue/bootstrap-vue
+[4]: https://alligator.io/vuejs/using-bootstrap4/

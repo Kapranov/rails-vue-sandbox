@@ -11,9 +11,10 @@
             <div class="col-md-6">
               <input type="text" v-model="book" class="form-control" autofocus="true">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <button @click="addBook()" class="btn btn-primary" :disabled="!book.length">Add Book</button>
             </div>
+            <div class="col-md-2"></div>
           </form>
         </div>
       </div>
